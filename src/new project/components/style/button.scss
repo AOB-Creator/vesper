@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
+$Maingreen : rgb(0, 197, 141);
+$Mainblue:rgb(22, 31, 106);
+$Textcolor: rgb(59, 59, 59);
+$Backcolor:rgb(241, 241, 241);
+$Mainfont:'Lato', sans-serif;
+.button{
+    
+    background-color: white;
+    padding: 20px 0px;
+    button{
+        background-color: $Maingreen;
+        padding: 15px 20px;
+        border: none;
+        font-family: $Mainfont;
+        display: block;
+        color: white;
+        width: 100%;
+        font-size: 15px;
+       font-weight: 600;
+       &:active{
+           background-color: rgb(0, 151, 108); 
+
+       };
+       cursor: pointer;
+    }
+    
+}

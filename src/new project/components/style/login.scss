@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
+$Maingreen : rgb(0, 197, 141);
+$Mainblue:rgb(22, 31, 106);
+$Textcolor: rgb(59, 59, 59);
+$Backcolor:rgb(241, 241, 241);
+$Mainfont:'Lato', sans-serif;
+.inputs{
+    background-color: rgb(255, 255, 255);
+    
+    text-align: center;
+    padding: 15px 0px;
+
+position: relative;
+    
+    
+    .input{
+        display: inline-flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        
+        label{
+            color: $Mainblue;
+            font-family: $Mainfont;
+            text-transform: capitalize;
+            font-weight: bolder;
+            padding: 10px 0px;
+            
+        }
+    }
+    .inputer_alpha{
+        padding: 10px 20px;
+        font-size: 15px;
+        outline: none;
+        border: 2px solid transparent;        
+        font-weight: 700;
+        background-color: $Backcolor;
+        color: $Textcolor;
+        min-width: 500px;
+        
+            
+
+        &:focus{
+            border: 2px solid $Maingreen;        
+        }
+        
+    }
+    
+
+    .logo-span{
+        position: absolute;
+        font-size: 20px;
+        top: 44px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        padding: 2px;
+        justify-content: center;
+        align-items: center;
+        background-color: $Backcolor;
+    }
+
+    .error{
+        position: absolute;
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        top: 7px;
+        right: 0;
+        
+    }
+}

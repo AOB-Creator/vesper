@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
+$Maingreen : rgb(0, 197, 141);
+$Mainblue:rgb(22, 31, 106);
+$Textcolor: rgb(59, 59, 59);
+$Backcolor:rgb(241, 241, 241);
+$Mainfont:'Lato', sans-serif;
+
+
+@mixin displayer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form{
+    
+    user-select: none;
+    background-color: $Backcolor;   
+    height: 100vh;
+    @include displayer();
+    .centers{
+        border-radius: 3px;
+        padding: 30px 40px;
+        background-color: white;
+        .title_form{
+            padding: 20px;
+            
+            .admin_logo{
+                text-align: center;
+                font-size: 35px;
+                padding: 10px 0px;
+                span:first-child{
+                    color: midnightblue;
+                }
+                span:last-child{
+                    color: $Maingreen;
+                }
+            }
+            p{
+                text-align: center;
+                font-family: $Mainfont;
+                color: $Mainblue;
+                font-size: 20px;
+            }
+
+            
+        }
+    }
+
+}
